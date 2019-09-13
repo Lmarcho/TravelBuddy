@@ -1,0 +1,1409 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>TravelBuddy</title>
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="css/fonts/stylesheet.css" />
+	<link rel="stylesheet" href="css/fonts/fonts.css" />
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/animat/animate.min.css" />
+	<link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="css/themes/default/default.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="css/owl-carousel/owl.transitions.css">
+
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
+	<link rel="stylesheet" href="css/page.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.getElementsByTagName("html")[0].className += " js";</script>
+
+
+	<style>
+	.modal-window{
+		position:fixed;
+		background-color:rgba(200,200,200,0.75);
+		top:0;
+		right:0;
+		bottom:0;
+		left:0;
+		z-index:999;
+		opacity:0;
+		pointer-events:none;
+		-webkit-transition:all 0.3s;
+		transition:all 0.3s;
+
+	}
+
+	.modal-window:target{
+		opacity:1;
+		pointer-events:auto;
+	}
+
+	.modal-window>div{
+		width:60%;
+		position:relative;
+		margin:10% auto;
+		padding:2rem;
+		background:#fff;
+		color:#444;
+		border-style: solid;
+		border-width: 5px;
+	}
+
+	.modal-window header{
+		font-weight:bold;
+	}
+
+	.modal-close{
+		color:#aaa
+		line-height: 70px;
+		font-size:100%;
+		position:absolute;
+		right:0;
+		text-align:right;
+		top:0;
+		width:300px;
+		text-decoration:none;
+
+	}
+
+	.modal-close:hover{
+		color:#000
+	}
+
+	.modal-window h1{
+		font-size:150%;
+		margin:0 0 15px;
+		background-color: lightgray;
+	}
+
+	.modal-window-head{
+		background-color: gray !important;
+		color: white;
+		text-align: center;
+	}
+
+	#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5e6c82;
+  color: white;
+}
+
+.tickadd li.tick:before {
+  content: "\2713";
+  color: #20db20;
+  font-weight:bold;
+  font-size:25px;
+}
+
+	</style>
+
+
+
+</head>
+<body>
+
+	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+
+	<header id="home" class="header">
+		<div class="main_menu_bg navbar-fixed-top">
+			<div class="container">
+				<div class="row">
+					<div class="nave_menu">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  <a class="navbar-brand" href="#">
+							<div class="logo">
+								<!--img src="images/logo.png" alt="" /-->
+							</div>
+						  </a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+						  <ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#abouts">About</a></li>
+							<li><a href="#Domain">Domain</a></li>
+							<li><a href="#Whatweachieved">What we achieved?</a></li>
+							<li><a href="#Milestons">Milestons</a></li>
+							<li><a href="#Documents">Documents</a></li>
+							<li><a href="#Presentations">Presentations</a></li>
+							<li><a href="#team">Team</a></li>
+
+							<li><a href="#contact">Contact</a></li>
+
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					</div>
+				</div><!--End of row -->
+
+			</div><!--End of container -->
+
+		</div>
+	</header> <!--End of header -->
+
+
+
+	<section id="banner" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="main_banner_area text-center">
+					<div class="col-md-12 col-sm-12">
+						<div class="single_banner_text wow zoomIn" data-wow-duration="1.5s">
+
+
+							<div class="separetor"></div>
+						</div>
+					</div>
+
+
+					<div class="scrolldown">
+						<a href="#abouts" class="scroll_btn"></a>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</section><!-- End of Banner Section -->
+
+
+	<section id="abouts" class="abouts">
+		<div class="container">
+			<div class="row">
+				<div class="main_abouts_content">
+				<div style="width:20px">
+				</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts wow fadeInLeft" data-wow-duration="2s" style="padding-left:10%; width:90%">
+							<h2>ABOUT TravelBuddy</h2>
+							<div class="separetor2"></div>
+							<p>Introducing application is a great step towards a better and faster smarter city.
+							Because with this application people will be able to travel here and there without any trouble because they will be able to plan ahead.
+							It will cause people to be more efficient and time saving in the busy world.
+
+							</p>
+
+							<!--a href="" class="btn pink-btn">LERAN MORE !</a-->
+						</div>
+					</div>
+
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+						<div class="single_abouts wow fadeInRight" data-wow-duration="2.5s" style="width:650px">
+							<img src="images/tool.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<section id="Domain" class="Domain">
+		<div class="container">
+			<div class="row">
+				<div class="head_title text-center wow fadeIn" data-wow-duration="1.5s">
+					<p style="font-size:25px; color:black;">DOMAIN</p>
+					<div class="separetor"></div>
+					<p></p>
+				</div>
+				<div class="wedo_content_area">
+
+
+
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="1s" style="height:400px;">
+							<div class="single_left_icon">
+										<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text" style="width:90%">
+								<h4>Literature Survey</h4>
+								<div class="separetor2"></div>
+								<p>Current knowledge including substantive findings and contributions</p>
+								<a href="#Literature" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="Literature" class="modal-window">
+
+
+
+									<div style="overflow:scroll; height:600px;">
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">LITERATURE REVIEW</h1>
+											<div>
+											<br>
+
+											<ul class="tickadd">
+											 <li class="tick" style="font-size:20px">  This chapter describes the approaches and technologies, which were used by many researches to overcome the problem with TravelBuddy applications and the outcomes of those projects. Also summarized description about the factors affecting the research problem and existing limitations and challenges will be described as follows.
+																Urbanization process is related to economic development,
+																social development and environmental protection.
+																Consequently, the urban population percentage is increasingly
+																important. This last took the speed character to overcome the
+																rural one since 2007 [1]. Consequently, cities all over the
+																world is at the height of seeking for optimal solutions to
+																face new challenges that grow variably over space and time The quick transition to a highly urbanized population
+																has made from societies a process of presenting solutions
+																regarding many key themes such as: Sustainable development,
+																Education, Energy, Environment, Safety and Public services.
+																Those challenges have led urban areas to be compound social
+																ecosystems in which sustainability and good quality of life
+																are important to be ensured
+																Urbanization process is related to economic development,
+																social development and environmental protection.Consequently,
+																the urban population percentage is increasingly important.
+																This last took the speed character to overcome the rural one since 2007.
+																Consequently, cities all over the world are at the height of seeking
+																for optimal solutions to face new challenges that grow variably over space and time.
+																The quick transition to a highly urbanized population has made from societies a process of presenting
+																solutions regarding many key themes such as: Sustainable development, Education, Energy, Environment,
+																Safety and Public services. Those challenges have led urban areas to be compound social ecosystems in
+																which sustainability and good quality of life are important to be ensured.</li><br>
+											<li class="tick" style="font-size:20px"> A.GSM/GPS Assisted Road and Traffic Congestion Detection System
+																					With this system user can know the traffic condition on the road using GPS and GSM.
+																					So users can use alternative routes as well. So the speed sensor of vehicle a controller
+																					can get the current speed of the vehicle. When that speed falls below a present
+																					threshold the controller is informed the vehicle location. When such a vehicle speed
+																					decreasing happens in few vehicles white's location is contiguous each other the controller
+																					identifies there is a traffic grid lock in that location. So then controller informs other
+																					users about the grid lock. Then they can use alternative routes to save their times.</li><br>
+											 <li class="tick" style="font-size:20px"> B.Traffic congestion detection based on GPS floating car data
+																					They said congestion has been a major challenge to the urban traffic system.
+																					They used GPS floating car data(FCD) method to detect traffic congestion information is studied.
+																					They used data for experimentation. This data extract from traffic congestion information of a big city in China.
+																					They extract that thing through GPS data processing, map matching travel speed estimation and after that they show all those details inside the map.
+																					They said the GPS floating car technology to collect traffic information becomes more cost effective to collect traffic information in a large scale.
+																					They said compared with the traditional fixed detection devices such as (inductive loops, video cameras and radar based sensors) floating car data
+																					technique can collect traffic information more accurate and more wide in real time. They said that they consider using GPS floating car data to
+																					detect traffic congestion information.</li><br>
+											 <li class="tick" style="font-size:20px">  C. Automatic vehicle accident detection and messaging system using GSM and GPS modem
+											 In this research paper they have described the way in which a traffic accident is diagnosed and
+											 how people are informed about the crash. They use the accelerometer as a car alarm application.
+											 Using that application System can detect danger drivers. And also they use as a rollover or a crash
+											 detector of a vehicle after an accident. The server identifies an accident using accelerometer signals.
+											 If vehicle met with an accident vibration sensor detect the signal and Micro electro mechanical system [MEM] will
+											 detect that vehicle rolls over or not. Then send a signal to ARM Controller. Using GSM Modem Microcontroller sends alerts
+											 about location to police, and rescue team. Once the message is received, a police vehicle can reach that location if there is a
+											 minor accident, the driver informs all relevant sections that the driver will not be in danger. So they can avoid wasting time.
+											 Their main technical components are Vibration sensors, Micro Electro Mechanical System (MEMS) accelerometer. In the future, they
+											 will use a WIFI webcam based on the need to improve this system.</li><br>
+											 <li class="tick" style="font-size:20px">  D. Detection of traffic congestion and incidents from GPS trace analysis.
+																				This research paper contains detecting traffic congestions and incident from GPS data.
+																				They get those GPS data using GPS trackers or drivers’ smartphones. They manipulate the GPS
+																				and place in the road map. They assign this system to each road segment of the map and a
+																				traffic state based on the speeds of the vehicle, it send to the users traffic alert based
+																				on the classified segments. Their traffic alert contains the affected area, a traffic state.
+																				They give example for traffic state. e.g.: Incident, slowed traffic, blocked traffic and they give
+																				estimated velocity of vehicles in the area for user’s alerts. They said this proposed system is give
+																				valuable support in traffic management for municipalities and citizens. They said their very important for urban and
+																				non-urban areas. Their experimental analysis was performed using a combination of simulated GPS data and real
+																				GPS data from city. Their result of the incident detection rate 91.6% and an average detection time lower
+																				them 7 minutes.</li><br>
+											</ul>
+
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2s" style="height:400px">
+							<div class="single_left_icon">
+										<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text" style="width:90%">
+								<h4>RESEARCH GAP</h4>
+								<div class="separetor2"></div>
+								<p>Research problem which has not been answered appropriately</p>
+								<a href="#researchgap" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="researchgap" class="modal-window">
+									<div>
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">RESEARCH GAP</h1>
+											<div>
+											<!----- start the code---->
+
+											<table id="customers">
+												<tr>
+													<th>Features</th>
+													<th>Google map</th>
+													<th>Culture and new digital technologies transforming world cities</th>
+													<th>PickMe</th>
+													<th>Propose app</th>
+
+												</tr>
+											  <tr>
+												<td>Analyze the time taken for reach the destination </td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+
+											  </tr>
+											  <tr>
+												<td>When we submit the time to reach the destination show the start time</td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+
+											  </tr>
+											  <tr>
+												<td>When we start travelling show us the weather report on the passing areas</td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+
+											  </tr>
+											  <tr>
+												<td>Identifying the closest department relevant to the report </td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+
+											  </tr>
+											  <tr>
+												<td>Shows the closes route according to the weather and traffic data</td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><b>N/A</b></td>
+												<td><span style='font-size:20px;'>&#10004;</span></td>
+											  </tr>
+
+
+
+											</table>
+
+											<!--ENd the code-->
+
+
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="3s"style="height:400px">
+							<div class="single_left_icon">
+									<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text" style="width:90%">
+								<h4>RESEARCH PROBLEM</h4>
+								<div class="separetor2"></div>
+								<p>The statement about area of concern and the condition to be improved</p>
+								<a href="#researchprob" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="researchprob" class="modal-window">
+									<div>
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">RESEARCH PROBLEM</h1>
+											<div>
+											<br>
+
+											<ul class="tickadd">
+											  <li class="tick" style="font-size:20px">  Now a days most of the search engines are voice-based, it grows as a trend with time. So it is much more valuable if we can implement on Facebook, Instagram, tweeter because most people are involved in it.
+											  This feature mostly benefits the user because of the following important reasons.</li><br>
+											 <li class="tick" style="font-size:20px">  Accessibility – for the users with visual impairments and disability</li><br>
+											 <li class="tick" style="font-size:20px">  Safety – handsfree interface is a huge convenience.
+																			(Performing actions with both hands) also more users at once with proper voice recognition.</li><br>
+											 <li class="tick" style="font-size:20px">  Manual memory forensics.</li><br>
+											 <li class="tick" style="font-size:20px">  Even without these reasons it will be a lot comfortable for the users if they can use voice commands.</li><br>
+											</ul>
+
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="1s" style="height:400px">
+							<div class="single_left_icon">
+									<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text" style="width:90%">
+								<h4>OBJECTIVES</h4>
+								<div class="separetor2"></div>
+								<p>Specific accomplishments to be achieved by the study</p>
+								<a href="#objectives" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="objectives" class="modal-window">
+									<div>
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">RESEARCH OBJECTIVES</h1>
+											<h1>Main Objective</h1>
+											<div>
+											<ul class="tickadd">
+											 <li class="tick" style="font-size:20px"> Providing people with weather data </li><br>
+												<li class="tick" style="font-size:20px"> Providing people with traffic data </li><br>
+												<li class="tick" style="font-size:20px"> Arrange the quickest way to the destination </li><br>
+											</ul>
+											</div>
+											<br>
+											<br>
+											<h1>Specific Objectives</h1>
+											<div>
+
+											<ul class="tickadd">
+											  <li class="tick" style="font-size:20px">  Help people to report disasters, crimes and crisis</li><br>
+											 <li class="tick" style="font-size:20px">  Help people to how to act accordingly in a crisis</li><br>
+											 <li class="tick" style="font-size:20px">  Memory forensics using API artifacts</li><br>
+											 <li class="tick" style="font-size:20px">  Memory forensics using Network Connection artifacts</li><br>
+
+											</ul>
+											</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2s" style="height:400px">
+							<div class="single_left_icon">
+										<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text" style="width:90%">
+								<h4>METHODOLOGY</h4>
+								<div class="separetor2"></div>
+								<p>Systematic plan of the research</p>
+								<a href="#methodology" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="methodology" class="modal-window" style="justify-content:center">
+									<div style="overflow:scroll; height:600px">
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">METHODOLOGY</h1>
+											<div>
+
+												<a target="_blank" href="images/1stStep.jpg">
+												  <img src="images/1stStep.jpg" alt="Forest" width="700" height="350">
+												</a>
+											</div>
+
+
+
+
+
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="3s" style="height:400px">
+							<div class="single_left_icon">
+								<i class="fa fa-star"></i>
+							</div>
+
+							<div class="single_right_text"style="width:90%">
+								<h4>TECHNOLOGY USED</h4>
+								<div class="separetor2"></div>
+								<p>The technologies used in the research</p>
+								<a href="#techused" class="btn pink-btn"style="background-color:#909aaf">Read More..</a>
+								<div id="techused" class="modal-window">
+									<div style="overflow:scroll; height:600px">
+										<a href="#modal-close" title="Close" class="modal-close" style="font-family: Arial; font-size:35px">&times;</a>
+											<h1 class="modal-window-head">TECHNOLOGY USED</h1>
+											<h1>Technologies</h1>
+											<div>
+											<ul class="tickadd">
+											 <li class="tick" style="font-size:20px">  Selenium Webdriver, TestNG framework, Python, Flask , Anaconda Navigator, ARIMA model for time series data </li><br>
+											<li class="tick" style="font-size:20px">  logistic regression, Google API, ML.net, Amazone WebService, Java</li><br>
+											<li class="tick" style="font-size:20px">	Firebase cloud messaging, Geo Fencing Technology, Android Studio</li><br>
+
+											</ul>
+											</div>
+											<br>
+											<br>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="Whatweachieved" class="counterUp">
+
+			<div class="head_title text-center wow fadeIn" data-wow-duration="1.5s">
+			<br>
+					<p style="color:white; font-size:25px;">WHAT WE ACHIEVED?</p>
+					<div class="separetor"></div>
+		</div>
+
+
+		<div class="counter_overlay">
+			<div class="container">
+				<div class="row">
+					<div class="main_counter_content">
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="sinle_counter wow fadeIn" data-wow-duration="1.8s">
+								<h4><i class="fa fa-star"></i><span class="static-counter">1st member (Lakshitha)</span></h4>
+								<p style="font-size:22px">Create a special automated function for the selected objects in google map to
+									 collect data automatically and store them in the firebase database and used ARIMA (Auto Regressive Integrated Moving Average)
+									 model for time series data to predict the time </p>
+								<div class="separetorwhite"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="sinle_counter wow fadeIn" data-wow-duration="2.1s">
+								<h4><i class="fa fa-star"></i><span class="static-counter">2nd member (Tharindu)</span></h4>
+								<p style="font-size:22px">Analyze weather data from weather API according to daily travelling root plans.
+											According to Google Api,Weather api genarating a chart displaying rout conditions.
+											Implement a algorithm for  calculate time delays happen in rain days. </p>
+								<div class="separetorwhite"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="sinle_counter wow fadeIn" data-wow-duration="2.4s">
+								<h4><i class="fa fa-star"></i><span class="static-counter">3rd member (Nethini)</span></h4>
+								<p style="font-size:22px">Providing the user with the easiest and the closest route to reach his/her
+									destination by creating an algorithm with the traffic analysis data and the weather report data.If we want
+									 to go to someplace we can get to know about all the nearby Available parking space Ahead of time</p>
+								<div class="separetorwhite"></div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="sinle_counter wow fadeIn" data-wow-duration="2.8s">
+								<h4><i class="fa fa-star"></i><span class="static-counter">4th member (Tharuka)</span></h4>
+								<p style="font-size:22px">Whenever an accident/crisis occurs it can be reported through the app with a photo. Whenever people reach
+													around 2KM radius where the report has made they will get a notification about the report that has made</p>
+								<div class="separetorwhite"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-----    Milestones start----->
+	<section id="Milestons" class="">
+
+		<section class="cd-timeline js-cd-timeline" style="  background-image: url("images/milestons.jpg");">
+
+
+		<div class="container container--lg cd-timeline__container">
+		<div class="head_title text-center wow fadeIn" data-wow-duration="1.5s">
+		<p style="color:black; font-size:25px;">MILESTONS</p>
+		</div>
+		<div class="separetor"></div>
+		<br>
+		<br>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component" >
+					<p style="font-size:20px"><a href="#preassessment" style="cursor: pointer"> Project pre-assessment</a></p>
+					<p class="text--subtle">
+						Assessment Type: Group<br>
+						Marks Allocation: None <br>
+					</p>
+
+					<div class="flex flex--space-between flex--center-y">
+						<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">14th Jan 2019</span>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--movie">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#projectcharter" style="cursor: pointer"> Project Charter</a></p>
+					<p class="text--subtle">
+						Assignment Type: Group<br>
+						Marks Allocation: None <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">16 Feb 2018</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+					<div class="cd-timeline__content text-component">
+						<p style="font-size:20px"><a href="#proposalpre" style="cursor: pointer"> Project Proposal Presentation</a></p>
+						<p class="text--subtle">
+							Assignment Type: Individual<br>
+							Marks Allocation: 5% <br>
+						</p>
+					<div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">10th Mar 2018</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--location">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#projectproposal" style="cursor: pointer"> Project Proposal Report</a></p>
+					<p class="text--subtle">
+							Assignment Type: Group<br>
+							Marks Allocation: 5% <br>
+					</p>
+					<div class="flex flex--space-between flex--center-y">
+						<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">27th Mar 2018</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--location">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#ppr" style="cursor: pointer"> Preliminary Progress Review</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 6% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">11th May 2018</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--movie">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#" style="cursor: pointer"> Project Status Document</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 1% <br>
+					</p>
+					<div class="flex flex--space-between flex--center-y">
+						<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">1st Jun 2018</span>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#pp1" style="cursor: pointer"> Progress Presentation (50%)</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 10% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">23rd Jul 2019</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--movie">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#researchpaper" style="cursor: pointer"> Research Paper</a></p>
+					<p class="text--subtle">
+						Assignment Type: Group<br>
+						Marks Allocation: 10% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">11th Aug 2019</span>
+				  </div>
+				</div>
+			</div>
+
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#pp2" style="cursor: pointer"> Progress Presentation II (90%)</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 18% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">4th Sep 2019</span>
+				  </div>
+				</div>
+			</div>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--movie">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#" style="cursor: pointer"> Website Assessment</a></p>
+					<p class="text--subtle">
+						Assignment Type: Group<br>
+						Marks Allocation: 3% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">14th Sep 2019</span>
+				  </div>
+				</div>
+			</div>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#finalreport" style="cursor: pointer"> Final Report</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 15% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">27th Oct 2019</span>
+				  </div>
+				</div>
+			</div>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--movie">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#finalpre" style="cursor: pointer"> Final Presentation</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 10% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">19th Nov 2019</span>
+				  </div>
+				</div>
+			</div>
+
+			<div class="cd-timeline__block">
+				<div class="cd-timeline__img cd-timeline__img--picture">
+					<img src="assets/img/cd-icon-picture.svg" alt="Picture">
+				</div>
+				<div class="cd-timeline__content text-component">
+					<p style="font-size:20px"><a href="#" style="cursor: pointer"> Final Viva</a></p>
+					<p class="text--subtle">
+						Assignment Type: Individual<br>
+						Marks Allocation: 15% <br>
+					</p>
+				  <div class="flex flex--space-between flex--center-y">
+					<span class="cd-timeline__date" style="color:#4b4d4f; font-size:20px">5h Dec 2019</span>
+				  </div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</section>
+  <script src="assets/js/main.js"></script>
+
+	</section>
+
+
+	<br>
+	<br>
+
+	<section id="Documents">
+			<div class="container">
+				<div class="row">
+
+					<div class="head_title text-center wow slideInDown" data-wow-duration="0.5s">
+						<p style="font-size:25px; color:black;">DOCUMENTS</p>
+						<div class="separetor"></div>
+						<p>All the documents can be downloaded from here!</p>
+					</div>
+
+
+					<div class="pricing_content_area choose_pricing_content_area text-center">
+
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="preassessment" data-wow-duration="0.5s">
+										<img src="images/preAssessment.png" alt="" style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 100px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/PreAssessment.pdf" downloaded><b>Pre Assessment Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+									<!--a href="" class="btn btn-lg">DOWNLOAD</a-->
+								</div>
+							</div>
+						</div>
+
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1.5s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="projectcharter" data-wow-duration=".5s">
+										<img src="images/projectCharter.png" alt="" style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 100px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/ProjectCharter.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					    <div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="2s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+								<div class="single_featured wow fadeIn" id="projectproposal" data-wow-duration=".5s">
+										<img src="images/projectProposal.png" alt="" style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 100px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/ProjectProposal.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="2.5s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="ppr" data-wow-duration=".5s">
+										<img src="images/ppr.png" alt="" style="width:250px"/>
+										<div class="featured_overlay">
+											<div class="overlay_content">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/19-045_PPR.pdf" downloaded><b>Group</b></a></li>
+													<li><a href="Docs/IT16026612_PPR.pdf" downloaded><b>T.H.T.S de Silva</b></a></li>
+													<li><a href="Docs/IT16094628_PPR.pdf" downloaded><b>H.M.T.S Jayarathna </b></a></li>
+													<li><a href="Docs/IT16026308_PPR.pdf" downloaded><b>D.F.M.A  Lakshitha</b></a></li>
+													<li><a href="Docs/IT16153264_PPR.pdf" downloaded><b>Nethini Weerasinghe P.W</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+								<div class="single_featured wow fadeIn" id="researchpaper" data-wow-duration=".5s">
+										<img src="images/ResearchPaper.png" alt="" style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 100px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/Research Paper.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1.5s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+								<div class="single_featured wow fadeIn" id="finalreport" data-wow-duration=".5s">
+										<img src="images/finalReport.png" alt="" style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 100px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section><!-- End of choose Pricing Section -->
+	<br>
+	<br>
+
+
+
+
+
+	<!--  Presentations-->
+	<section id="Presentations">
+			<div class="container">
+				<div class="row">
+
+					<div class="head_title text-center wow slideInDown" data-wow-duration="0.3s">
+						<p style="font-size:25px; color:black;">PRESENTATIONS</p>
+						<div class="separetor"></div>
+						<p>All the presentations can be downloaded from here!</p>
+					</div>
+					<div class="pricing_content_area choose_pricing_content_area text-center">
+
+					    <div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="proposalpre" data-wow-duration=".5s">
+										<img src="images/proposalPre.png" alt=""style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 70px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/ProposalPresentation.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+					    <div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="1.5s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="pp1" data-wow-duration=".5s">
+										<img src="images/50pre.png" alt=""style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 70px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/PP1.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+					    <div class="col-md-3 col-sm-6 col-xs-12">
+							<div class="head_title text-center wow zoomIn" data-wow-duration="2s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="pp2" data-wow-duration=".5s">
+										<img src="images/90pre.png" alt=""style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 60px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/90presentation.pdf" downloaded><b>Presentation</b></a></li>
+													<li><a href="Docs/90presentation.pdf" downloaded><b>Poster</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="head_title text-center wow zoomIn" data-wow-duration="2.5s">
+								<!--h3>Casual</h3-->
+								<div class="choose_pricing_text">
+
+									<div class="single_featured wow fadeIn" id="finalpre" data-wow-duration=".5s">
+										<img src="images/finalPre.png" alt=""style="width:250px"/>
+										<div class="featured_overlay" >
+											<div class="overlay_content" style="margin-top: 70px">
+												<div class="list-type1">
+												<ol>
+													<li><a href="Docs/finaldoc.pdf" downloaded><b>Download</b></a></li>
+												</ol>
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+		</section><!-- End of presentation Section -->
+
+
+
+
+
+	<section id="team" class="team">
+		<div class="container">
+			<div class="row">
+				<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
+					<h2>MEET OUR CREW</h2>
+					<div class="separetor"></div>
+					<p></p>
+				</div>
+
+
+
+					<div class="col-md-3 col-sm-6 col-xs-12"></div>
+					<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+						<div class="single_wedo wow fadeIn" data-wow-duration="1s">
+							<div class="single_team_img">
+								<img src="images/hansikamis.jpg" alt="" />
+								<div class="single_team_overlay text-center">
+									<a href="https://lk.linkedin.com/in/hansika-mahaadikara-42a89a41"><i class="fa fa-linkedin"></i></a>
+									<a href="mailto:hansika.h@sliit.lk?Subject=TravelBuddy"><i class="fa fa-envelope"></i></a>
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>Ms Hansika Mahaadikara</h4>
+								<p>Supervisor</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-12"></div>
+			</div>
+			<div class="row">
+
+
+
+
+				<div class="main_team_content text-center">
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2.1s">
+							<div class="single_team_img">
+								<img src="images/tm1.jpg" alt="" />
+								<div class="single_team_overlay text-center">
+									<!-- <a href="https://www.linkedin.com/in/benjamine-sahayanathan-856076141/"><i class="fa fa-linkedin"></i></a> -->
+									<a href="mailto:tharindusachintha94@gmail.com?Subject=TravelBuddy"><i class="fa fa-envelope"></i></a>
+
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>T.H.T.S de Silva </h4>
+								<p>IT16026612 </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2.1s">
+							<div class="single_team_img">
+								<img src="images/tm2.jpg" alt="" />
+								<div class="single_team_overlay text-center">
+									<!-- <a href="https://www.linkedin.com/in/benjamine-sahayanathan-856076141/"><i class="fa fa-linkedin"></i></a> -->
+									<a href="mailto:tjtharuka5@gmail.com?Subject=TravelBuddy"><i class="fa fa-envelope"></i></a>
+
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>H.M.T.S Jayarathna </h4>
+								<p>IT16094628 </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2.4s">
+							<div class="single_team_img">
+								<img src="images/tm3.jpg" alt="" />
+								<div class="single_team_overlay text-center">
+									<a href="https://github.com/Lmarcho"><i class="fa fa-github"></i></a>
+									<a href="https://www.linkedin.com/in/lakshitha-mathngadeera-671978a2/"><i class="fa fa-linkedin"></i></a>
+									<a href="mailto:lmathngadeera@gmail.com?Subject=TravelBuddy"><i class="fa fa-envelope"></i></a>
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>D.F.M.A  Lakshitha</h4>
+								<p>IT16026308</p>
+								<br/>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="single_wedo wow fadeIn" data-wow-duration="2.6s">
+							<div class="single_team_img">
+								<img src="images/tm4.jpg" alt="" />
+								<div class="single_team_overlay text-center">
+									<!-- <a href="https://www.linkedin.com/in/diluxana/"><i class="fa fa-linkedin"></i></a> -->
+									<a href="mailto:nethinisashani@gamail.com?Subject=TravelBuddy"><i class="fa fa-envelope"></i></a>
+								</div>
+							</div>
+							<div class="single_team_name">
+								<h4>Nethini Weerasinghe P.W</h4>
+								<p>IT16153264</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!---------------------------------------------------------------->
+
+
+
+
+	<!---------------------------------------------------------------->
+
+		<!-- Contact form -->
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12">
+						<div class="head_title text-center wow zoomIn" data-wow-duration="0.5s">
+							<h2>Get In Touch With Us</h2>
+							<div class="separetor"></div>
+							<p>We are here to help. Want to learn more about our project? Please get in touch, we'd love to hear from you!</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="messsage_contant">
+						<div class="col-md-7 col-sm-7">
+							<div class="single_message_left wow fadeIn" data-wow-duration="1s">
+								<form action="done.lk/submit" id="formid">
+										<!--<div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">-->
+
+										 <div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" placeholder="Name" required="">
+												</div>
+											</div>
+
+											<div class="col-md-6">
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" placeholder="Email" required="">
+												</div>
+											</div>
+										 </div>
+
+
+
+										  <div class="form-group">
+											<textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
+										  </div>
+
+										  <div class="center-content">
+											<input type="submit" value="SUBMIT NOW" class="btn btn-lg">
+										  </div>
+										<!--</div>-->
+								</form>
+							</div>
+						</div>
+
+						<div class="col-md-5 col-sm-5">
+							<div class="single_message_right wow fadeIn" data-wow-duration="1s">
+
+								<p>
+									<i class="fa fa-map-marker"></i>
+									Sri Lanka Institute of Information Technology
+									<span>Malabe, Sri Lanka</span>
+								</p>
+								<p><i class="fa fa-envelope-o"></i><a href="mailto:projectTravelBuddy@gmail?Subject=TravelBuddy" target="_top">projecttravelbuddy@gmail.com</a></p>
+							</div>
+						</div>
+					</div> <!-- End of messsage contant-->
+				</div>
+			</div>
+		</section>
+
+		<footer id="footer" class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="main_footer text-center wow zoomIn" data-wow-duration="1s">
+						<p>Made with <i class="fa fa-heart"></i> by Team TravelBuddy</a> 2018. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	<!-- STRAT SCROLL TO TOP -->
+
+	<div class="scrollup">
+		<a href="#"><i class="fa fa-chevron-up"></i></a>
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery/jquery.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+
+	<script type="text/javascript" src="js/nivo-lightbox/nivo-lightbox.min.js"></script>
+
+	<script type="text/javascript" src="js/owl-carousel/owl.carousel.min.js"></script>
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/wow/wow.min.js"></script>
+	<!--<script type="text/javascript" src="js/counterup/counterup.min.js"></script>-->
+
+	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>-->
+	<!--<script type="text/javascript" src="js/counterup/jquery.counterup.min.js"></script>-->
+
+
+	<script type="text/javascript" src="js/isotop/isotope.min.js"></script>
+	<script type="text/javascript" src="js/isotop/isotop.function.js"></script>
+
+	<script type="text/javascript" src="js/masonry/masonry.min.js"></script>
+
+	<script type="text/javascript" src="js/mixitup/jquery.mixitup.min.js"></script>
+	<script type="text/javascript" src="js/masonry/masonry.pkgd.min.js"></script>
+</body>
+</html>
