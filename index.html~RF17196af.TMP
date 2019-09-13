@@ -1,4 +1,4 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
@@ -657,7 +657,7 @@
 <!-----    Milestones start----->
 	<section id="Milestons" class="">
 
-		<!-- <section class="cd-timeline js-cd-timeline" style="  background-image: url("images/milestons.jpg");"> -->
+		<section class="cd-timeline js-cd-timeline" style="  background-image: url("images/milestons.jpg");">
 
 
 		<div class="container container--lg cd-timeline__container">
